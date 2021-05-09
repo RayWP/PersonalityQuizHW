@@ -109,7 +109,6 @@ class QuestionViewController: UIViewController {
     
     func updateSingleStack(using answers: [Answer]) {
         stack_button.isHidden = false
-        print("\n\n\n\n UNflasing SINGLE \n\n")
         btn_1.setTitle(answers[0].text, for: .normal)
         btn_2.setTitle(answers[1].text, for: .normal)
         btn_3.setTitle(answers[2].text, for: .normal)
@@ -118,6 +117,10 @@ class QuestionViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         stack_multi.isHidden = false
+        switch_1.isOn = false
+        switch_2.isOn = false
+        switch_3.isOn = false
+        switch_4.isOn = false
         multi_1.text = answers[0].text
         multi_2.text = answers[1].text
         multi_3.text = answers[2].text
@@ -126,6 +129,7 @@ class QuestionViewController: UIViewController {
     
     func updateRangedStack(using answers: [Answer]) {
         stack_slider.isHidden = false
+        slider_answer.setValue(0.5, animated: false)
         slider_label_left.text = answers.first?.text
         slider_label_right.text = answers.last?.text
     }
@@ -184,5 +188,17 @@ class QuestionViewController: UIViewController {
           performSegue(withIdentifier: "ResultsSegue", sender: nil)
         }
     }
-
-}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let my_segue = segue.destination as! ResultsViewController
+            my_segue.responses = answersChosen
+            
+        }
+    }
+    
+    @IBAction func unwindToQeustionViewController(to: UIStoryboardSegue) {
+        
+    }
+    
+} //class closer

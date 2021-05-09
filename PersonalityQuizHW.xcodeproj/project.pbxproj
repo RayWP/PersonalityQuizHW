@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D05A58D2647B07B001C20E9 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05A58C2647B07B001C20E9 /* ResultsViewController.swift */; };
 		4D0F073426419D9E005D39AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F073326419D9E005D39AF /* AppDelegate.swift */; };
 		4D0F073626419D9E005D39AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F073526419D9E005D39AF /* SceneDelegate.swift */; };
 		4D0F073826419D9E005D39AF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F073726419D9E005D39AF /* WelcomeViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D05A58C2647B07B001C20E9 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		4D0F073026419D9E005D39AF /* PersonalityQuizHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityQuizHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0F073326419D9E005D39AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0F073526419D9E005D39AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4D0F073926419D9E005D39AF /* Main.storyboard */,
 				4DF3C9D82643A7F0008730B0 /* QuestionData.swift */,
 				4DF81B4426423C2800746A87 /* QuestionViewController.swift */,
+				4D05A58C2647B07B001C20E9 /* ResultsViewController.swift */,
 				4D0F073C26419D9F005D39AF /* Assets.xcassets */,
 				4D0F073E26419D9F005D39AF /* LaunchScreen.storyboard */,
 				4D0F074126419D9F005D39AF /* Info.plist */,
@@ -148,6 +151,7 @@
 				4DF3C9D92643A7F0008730B0 /* QuestionData.swift in Sources */,
 				4DF81B4526423C2800746A87 /* QuestionViewController.swift in Sources */,
 				4D0F073626419D9E005D39AF /* SceneDelegate.swift in Sources */,
+				4D05A58D2647B07B001C20E9 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
